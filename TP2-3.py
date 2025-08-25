@@ -1,26 +1,17 @@
-Ingresar gasto:
-23.75
-Dinero recibido
-100
+def change():
+    expense = 23.75
+    money = 100
+    vuelto = money - expense
+    pesos = int(vuelto)
+    centavos = int(round((vuelto - pesos) * 100))
+    print("Ingresar gasto:")
+    print(expense)
+    print("Dinero recibido")
+    print(money)
 
-Vuelto
-
-Pesos:
-76
-Centavos:
-25
-
-gasto = float(input("Ingresar gasto:\n"))
-recibido = float(input("Dinero recibido\n"))
-
-
-vuelto = recibido - gasto
-
-
-pesos = int(vuelto)  
-centavos = round((vuelto - pesos) * 100)
-
-
-print("\nVuelto\n")
-print(f"Pesos:\n{pesos}")
-print(f"Centavos:\n{centavos}")
+    print("\nVuelto\n")
+    print("Pesos:")
+    print(pesos)
+    print("Centavos:")
+    print(centavos)
+change()
